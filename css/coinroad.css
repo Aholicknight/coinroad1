@@ -24,7 +24,9 @@
 
 font {
   font-family: 'Bahianita', cursive;
-  font-size: 30px
+  font-size: 30px;
+  color: white;
+  align-items: center;
 }
 
 body {
@@ -35,6 +37,13 @@ body {
 .funnyimage{
   align-items: center;
   height: 50%;
+}
+
+.juice {
+  font-family: 'Bahianita', cursive;
+  font-size: 30px;
+  color: white;
+  align-items: center;
 }
 
 .monitor {
