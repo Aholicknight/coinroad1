@@ -12,14 +12,19 @@
   --darkgrayColor: #535451;
   --orangeColor: #ffa55c;
   --normalFont: 'IBM Plex Mono', monospaced;
-  
+
   --ants-speed: 0.25s;
-  
+
   --left-arm: 0;
   --right-arm: 0;
-  
+
   font-family: var(--normalFont);
   font-size: 19px;
+}
+
+font {
+  font-family: 'Bahianita', cursive;
+  font-size: 30px
 }
 
 body {
@@ -27,18 +32,23 @@ body {
   margin: 0;
 }
 
+.funnyimage{
+  align-items: center;
+  height: 50%;
+}
+
 .monitor {
   width: 1024px;
   height: 676px;
   margin: 2em auto;
-  position: relative;  
+  position: relative;
 }
 
 .start {
   text-align: center;
 }
 
-.start h1 { 
+.start h1 {
     font-size: 1rem;
     color: #fff;
     letter-spacing: 16px;
@@ -53,7 +63,7 @@ body {
     color: #bbb;
   }
 
-.start .redants {    
+.start .redants {
     position: relative;
   }
 
@@ -66,7 +76,7 @@ body {
         margin: 22px auto;
       }
 
-.start .redants .welcome a { 
+.start .redants .welcome a {
         color: cyan;
       }
 
@@ -98,7 +108,7 @@ body {
       display: inline-block;
       overflow: hidden;
       -webkit-animation: moveAnts var(--ants-speed) linear infinite;
-              animation: moveAnts var(--ants-speed) linear infinite;      
+              animation: moveAnts var(--ants-speed) linear infinite;
     }
 
 .start .redants::before { animation-direction: reverse }
@@ -128,7 +138,7 @@ body {
 .screen {
   border: 5px solid var(--blueColor);
   border-bottom-width: 25px;
-  background: var(--blueColor);  
+  background: var(--blueColor);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -200,7 +210,7 @@ body {
     width: 9px;
     height: 8px;
     -webkit-transform: translate(14px, 22px);
-            transform: translate(14px, 22px);    
+            transform: translate(14px, 22px);
   }
 
 .board {
@@ -218,7 +228,7 @@ body {
   background: darkgrey;
   overflow: hidden;
   position: relative;
-  z-index: 1;  
+  z-index: 1;
 }
 
 .building.type1 { background: var(--cyanColor); }
@@ -235,6 +245,11 @@ body {
 
 .window.on {
   background: var(--yellowColor);
+}
+
+.text {
+  padding: 10px;
+  color: #fefefe;
 }
 
 gorilla-player {
@@ -335,7 +350,7 @@ gorilla-player .legs {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -6px;    
+    top: -6px;
   }
 
 gorilla-player .leg {
@@ -386,10 +401,10 @@ banana-missil {
 }
 
 banana-missil.shoot {
-    -webkit-animation: 
+    -webkit-animation:
       shoot 5s linear infinite,
       spin 1s linear infinite;
-            animation: 
+            animation:
       shoot 5s linear infinite,
       spin 1s linear infinite;
   }
@@ -410,31 +425,31 @@ banana-missil.spin {
 }
 
 @-webkit-keyframes charging {
-  0%, 100% { 
-    -webkit-filter: drop-shadow(0 0 15px yellow); 
+  0%, 100% {
+    -webkit-filter: drop-shadow(0 0 15px yellow);
             filter: drop-shadow(0 0 15px yellow);
     -webkit-transform: translateY(-7px);
             transform: translateY(-7px);
   }
-  50% { 
-    -webkit-filter: drop-shadow(0 0 5px yellow); 
-            filter: drop-shadow(0 0 5px yellow); 
-    -webkit-transform: translateY(-3px); 
+  50% {
+    -webkit-filter: drop-shadow(0 0 5px yellow);
+            filter: drop-shadow(0 0 5px yellow);
+    -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
 }
 
 @keyframes charging {
-  0%, 100% { 
-    -webkit-filter: drop-shadow(0 0 15px yellow); 
+  0%, 100% {
+    -webkit-filter: drop-shadow(0 0 15px yellow);
             filter: drop-shadow(0 0 15px yellow);
     -webkit-transform: translateY(-7px);
             transform: translateY(-7px);
   }
-  50% { 
-    -webkit-filter: drop-shadow(0 0 5px yellow); 
-            filter: drop-shadow(0 0 5px yellow); 
-    -webkit-transform: translateY(-3px); 
+  50% {
+    -webkit-filter: drop-shadow(0 0 5px yellow);
+            filter: drop-shadow(0 0 5px yellow);
+    -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
 }
